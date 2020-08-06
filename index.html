@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        padding: 30px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .selected {
+        font-weight: bold;
+        font-size: 18px;
+        border-bottom: 3px solid rgb(59, 128, 233);
+      }
+      .panel {
+        width: 500px;
+        height: 300px;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .panel * {
+        transition: all 0.3s ease;
+      }
+      .panel .panel-title {
+        height: 30px;
+        font-size: 16px;
+      }
+      .panel .panel-title span {
+        cursor: pointer;
+      }
+      .panel-body {
+        padding-top: 10px;
+
+        font-size: 14px;
+      }
+      .list-view {
+        width: 300px;
+      }
+      .list-view figure {
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .list-view img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./main.js"></script>
+  </body>
+</html>
